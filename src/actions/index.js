@@ -72,6 +72,6 @@ export function fetchSecretMessage(){
 					payload: response.data.message
 				})
 			})
-			.catch(error=>{console.log(error)})
+			.catch(error=>{dispatch(authError('Sorry! Only authorized users have access to the page!'));})
 	}
 }
